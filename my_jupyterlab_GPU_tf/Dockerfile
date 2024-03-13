@@ -6,7 +6,8 @@ WORKDIR /jupyterlab
 
 # Install the required packages
 RUN pip install --upgrade pip setuptools
-COPY requirements.txt /jupyterlab
+COPY requirements.txt .
+COPY ./utils/ ./utils/
 # RUN pip install --no-cache-dir -r requirements.txt
 
 # Run JupyterLab on container startup

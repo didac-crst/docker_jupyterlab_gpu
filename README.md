@@ -5,6 +5,10 @@ This docker provides access to JupyeterLab together with the Tensorflow library 
 ### Software requirements:
 
 20240313: My system is currently running on the following OS & drivers:
+- Kernel:
+    > **Linux command:** ```$ uname -r```
+    - Version: 5.11.0-34-generic
+
 - Ubuntu:
     > **Linux command:** ```$ lsb_release -a```
     - Version: 20.04.6 LTS
