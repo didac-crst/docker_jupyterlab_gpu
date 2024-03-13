@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  my_jupyterlab_GPU:
+    image: my_jupyterlab_gpu_img
+    container_name: my_jupyterlab_gpu
+    networks:
+      - mynetwork
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/notebooks
+    user: root
+    environment:
+      - CHOWN_HOME=yes
+      - CHOWN_HOME_OPTS=-R
+
+networks:
+  mynetwork:
+    driver: bridge

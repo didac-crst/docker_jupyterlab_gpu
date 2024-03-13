@@ -1,0 +1,29 @@
+# cudnn libraries
+# They need to be download from nvidia website and placed in the folder
+cudnn/*
+
+# Notebooks
+*.ipynb
+*.ipynb_checkpoints
+notebooks/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# environment files
+.env
+
+# Virtual environment
+.venv/
+
+# Database
+*.db
+
+# Logs
+*.log
+
+# Other
+.DS_Store
