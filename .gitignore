@@ -1,6 +1,7 @@
 # cudnn libraries
 # They need to be download from nvidia website and placed in the folder
 cudnn/*
+*.deb
 
 # Notebooks
 *.ipynb
