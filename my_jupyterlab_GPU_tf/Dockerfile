@@ -7,7 +7,7 @@ WORKDIR /jupyterlab
 # Install the required packages
 RUN pip install --upgrade pip setuptools
 COPY requirements.txt /jupyterlab
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # Run JupyterLab on container startup
 CMD ["jupyter", "lab", "--ip='*'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token='mytoken'"]

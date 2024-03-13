@@ -4,7 +4,6 @@ cudnn/
 *.deb
 
 # Notebooks
-*.ipynb
 *.ipynb_checkpoints
 notebooks/
 
